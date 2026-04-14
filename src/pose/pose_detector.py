@@ -4,11 +4,6 @@ PoseDetector Module
 This module provides a reusable class for detecting human body poses
 using MediaPipe's Pose solution.
 
-MediaPipe Pose detects 33 3D landmarks on the human body including:
-- Face landmarks (nose, eyes, ears)
-- Upper body (shoulders, elbows, wrists)
-- Lower body (hips, knees, ankles)
-
 Each landmark has:
 - x, y: Normalized coordinates (0.0 to 1.0) relative to image dimensions
 - z: Depth from the hip center (lower z = closer to camera)
@@ -17,6 +12,7 @@ Each landmark has:
 
 import cv2  # OpenCV library for image processing
 import mediapipe as mp  # Google's MediaPipe framework for ML pipelines
+import numpy as np  # Numerical operations for angle calculations
 
 
 class PoseDetector:
@@ -176,6 +172,180 @@ class PoseDetector:
 
         # Return the list of landmark dictionaries
         return landmarks
+
+    @staticmethod
+    def calculate_angle(p1, p2, p3):
+        """
+        Calculate the angle between three landmarks (p1-p2-p3).
+        
+        The angle is calculated at point p2 (the middle point).
+        Uses the dot product formula: cos(theta) = (a·b) / (|a|*|b|)
+        
+        Args:
+            p1 (dict): First landmark with 'x', 'y' keys.
+            p2 (dict): Middle landmark (vertex) with 'x', 'y' keys.
+            p3 (dict): Third landmark with 'x', 'y' keys.
+            
+        Returns:
+            float: Angle in degrees (0-180).
+            
+        Example:
+            # Calculate elbow angle (shoulder-elbow-wrist)
+            angle = detector.calculate_angle(shoulder, elbow, wrist)
+        """
+        # Convert landmark coordinates to numpy arrays
+        # We use x and y coordinates (can also include z for 3D angles)
+        a = np.array([p1['x'], p1['y']])  # First point
+        b = np.array([p2['x'], p2['y']])  # Middle point (vertex)
+        c = np.array([p3['x'], p3['y']])  # Third point
+        
+        # Calculate vectors from the vertex (point b)
+        ba = a - b  # Vector from b to a
+        bc = c - b  # Vector from b to c
+        
+        # Calculate the dot product of the two vectors
+        # dot_product = ba_x * bc_x + ba_y * bc_y
+        dot_product = np.dot(ba, bc)
+        
+        # Calculate the magnitude (length) of each vector
+        # magnitude = sqrt(x^2 + y^2)
+        magnitude_ba = np.linalg.norm(ba)
+        magnitude_bc = np.linalg.norm(bc)
+        
+        # Avoid division by zero if points are too close
+        if magnitude_ba == 0 or magnitude_bc == 0:
+            return 0.0
+        
+        # Calculate cosine of the angle using dot product formula
+        # cos(theta) = (a·b) / (|a|*|b|)
+        # np.clip ensures the value stays in valid range [-1, 1]
+        cos_theta = np.clip(dot_product / (magnitude_ba * magnitude_bc), -1.0, 1.0)
+        
+        # Calculate angle in radians and convert to degrees
+        angle_rad = np.arccos(cos_theta)
+        angle_deg = np.degrees(angle_rad)
+        
+        return angle_deg
+
+    def draw_joint_angles(self, img, angles_config=None):
+        """
+        Calculate and draw joint angles on the image.
+        
+        Each angle is displayed at the vertex point with a colored label.
+        
+        Args:
+            img (numpy.ndarray): Image to draw on (BGR format).
+            angles_config (list[dict], optional): List of angle configurations.
+                Each dict has keys:
+                - 'p1': landmark index for first point
+                - 'p2': landmark index for vertex (middle point)
+                - 'p3': landmark index for third point
+                - 'label': name of the angle to display
+                
+                If None, uses default common joint angles.
+                
+        Returns:
+            numpy.ndarray: Image with drawn joint angles.
+            
+        Example:
+            config = [
+                {'p1': LEFT_SHOULDER, 'p2': LEFT_ELBOW, 'p3': LEFT_WRIST, 'label': 'L Elbow'},
+                {'p1': RIGHT_SHOULDER, 'p2': RIGHT_ELBOW, 'p3': RIGHT_WRIST, 'label': 'R Elbow'}
+            ]
+            img = detector.draw_joint_angles(img, config)
+        """
+        # Import landmark constants
+        from landmarks import (
+            LEFT_SHOULDER, RIGHT_SHOULDER,
+            LEFT_ELBOW, RIGHT_ELBOW,
+            LEFT_WRIST, RIGHT_WRIST,
+            LEFT_HIP, RIGHT_HIP,
+            LEFT_KNEE, RIGHT_KNEE,
+            LEFT_ANKLE, RIGHT_ANKLE
+        )
+        
+        # Default configuration for common joint angles
+        if angles_config is None:
+            angles_config = [
+                # Upper body angles
+                {'p1': LEFT_SHOULDER, 'p2': LEFT_ELBOW, 'p3': LEFT_WRIST, 'label': 'L Elbow'},
+                {'p1': RIGHT_SHOULDER, 'p2': RIGHT_ELBOW, 'p3': RIGHT_WRIST, 'label': 'R Elbow'},
+                {'p1': LEFT_ELBOW, 'p2': LEFT_SHOULDER, 'p3': LEFT_HIP, 'label': 'L Shoulder'},
+                {'p1': RIGHT_ELBOW, 'p2': RIGHT_SHOULDER, 'p3': RIGHT_HIP, 'label': 'R Shoulder'},
+                # Lower body angles
+                {'p1': LEFT_HIP, 'p2': LEFT_KNEE, 'p3': LEFT_ANKLE, 'label': 'L Knee'},
+                {'p1': RIGHT_HIP, 'p2': RIGHT_KNEE, 'p3': RIGHT_ANKLE, 'label': 'R Knee'},
+                {'p1': LEFT_SHOULDER, 'p2': LEFT_HIP, 'p3': LEFT_KNEE, 'label': 'L Hip'},
+                {'p1': RIGHT_SHOULDER, 'p2': RIGHT_HIP, 'p3': RIGHT_KNEE, 'label': 'R Hip'},
+            ]
+        
+        # Get image dimensions to scale normalized coordinates
+        img_height, img_width, _ = img.shape
+        
+        # Get landmarks
+        landmarks = self.get_landmarks()
+        if landmarks is None:
+            return img  # No pose detected
+        
+        # Calculate and draw each angle
+        for angle_def in angles_config:
+            p1_idx = angle_def['p1']
+            p2_idx = angle_def['p2']
+            p3_idx = angle_def['p3']
+            label = angle_def['label']
+            
+            # Get the three landmarks
+            p1 = landmarks[p1_idx]
+            p2 = landmarks[p2_idx]
+            p3 = landmarks[p3_idx]
+            
+            # Check visibility (only draw if vertex is visible enough)
+            if p2['visibility'] < 0.5:
+                continue
+            
+            # Calculate angle
+            angle_value = self.calculate_angle(p1, p2, p3)
+            
+            # Convert vertex coordinates to pixel position
+            cx = int(p2['x'] * img_width)
+            cy = int(p2['y'] * img_height)
+            
+            # Determine color based on angle (green for good, red for extreme)
+            # Normal range: 30-150 degrees, outside this = warning color
+            if 30 <= angle_value <= 150:
+                color = (0, 255, 0)  # Green (BGR)
+            else:
+                color = (0, 0, 255)  # Red (BGR)
+            
+            # Draw angle label on image
+            # Position slightly above the vertex
+            text_position = (cx + 10, cy - 10)
+            
+            # Format angle text with 1 decimal place
+            text = f"{label}: {angle_value:.1f}°"
+            
+            # Draw a semi-transparent background rectangle for better readability
+            text_size = cv2.getTextSize(text, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)[0]
+            cv2.rectangle(
+                img,
+                (text_position[0] - 2, text_position[1] - 15),
+                (text_position[0] + text_size[0] + 2, text_position[1] + text_size[1] + 2),
+                (0, 0, 0),  # Black background
+                -1  # Filled rectangle
+            )
+            
+            # Draw the text
+            cv2.putText(
+                img,
+                text,
+                text_position,
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.5,
+                color,
+                1
+            )
+        
+        return img
 
     def draw_specific_landmarks(self, img, landmark_indices):
         """
