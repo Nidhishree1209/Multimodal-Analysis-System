@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Anjali Hasta",
+    "description": "Hold Pataka in both the hands & join the palms to show Anjali Hasta.",
+    "viniyoga_translation": "To salute God, Teacher & the Learned hold the Anjali Hasta above the head, in front of the face & in front of chest respectively.",
+    "detection_rules": {
+      "left_hand": "Pataka Hasta",
+      "right_hand": "Pataka Hasta",
+      "connection": "Palms pressed flat against each other."
+    }
+  },
+  {
+    "name": "Kapota Hasta",
+    "description": "In Anjali Hasta, only the borders of the hands are joined(Palm should not touch one another) to show Kapota Hasta.",
+    "viniyoga_translation": "To make promise, Speak to the teacher, To be Polite, To Agree this hasta is used.",
+    "detection_rules": {
+      "left_hand": "Pataka Hasta",
+      "right_hand": "Pataka Hasta",
+      "connection": "Base, sides, and fingertips touching, palms slightly separated creating a hollow cavity."
+    }
+  },
+  {
+    "name": "Karkata Hasta",
+    "description": "Bring the fingers of both the hands between one another to show Karkata Hasta.",
+    "viniyoga_translation": "To show Crowd, Thick articles, Blowing of Shankha, Stretching Limbs, Bending the branches of a tree this hasta is used.",
+    "detection_rules": {
+      "left_hand": "Fingers spread open",
+      "right_hand": "Fingers spread open",
+      "connection": "Fingers of both hands interlocked natively inward towards the back of the hands."
+    }
+  },
+  {
+    "name": "Swastika Hasta",
+    "description": "Hold Pataka Hands & cross the hands at the wrist so that the hands are opposite to each other to shoe Swastika Hasta.",
+    "viniyoga_translation": "This hasta is used to show Aligater, To Talk in fear, to Argument and to praise this hasta is used.",
+    "detection_rules": {
+      "left_hand": "Pataka Hasta",
+      "right_hand": "Pataka Hasta",
+      "connection": "Hands crossed symmetrically at the wrists form an 'X' shape."
+    }
+  },
+  {
+    "name": "Dola Hasta",
+    "description": "Hold Pataka Hasta, stretch the arms & keep the hasta upside down along the hip line to show Dola Hasta.",
+    "viniyoga_translation": "This hasta is used in the beginning of a dance.",
+    "detection_rules": {
+      "left_hand": "Pataka Hasta",
+      "right_hand": "Pataka Hasta",
+      "connection": "No physical connection. Arms fully stretched out beside the hips, palms facing downwards."
+    }
+  },
+  {
+    "name": "Pushpaputa Hasta",
+    "description": "Hold Sarpasheersha in both the hands & join them at the wrist to show Pushpaputa Hasta.",
+    "viniyoga_translation": "To show Lamp Offering, Children, Accept Fruits, Offering to the Sun in the evenings, Chant Holy prayers This hasta is used.",
+    "detection_rules": {
+      "left_hand": "Sarpasheersha Hasta",
+      "right_hand": "Sarpasheersha Hasta",
+      "connection": "Sides of the hands/wrists are pressed together to form a bowl (receiving gesture)."
+    }
+  },
+  {
+    "name": "Utsanga Hasta",
+    "description": "Hold Mrugasheersha Hasta in boh the hands, cross the hands, touch opposite shoulders to show Utsanga Hasta.",
+    "viniyoga_translation": "To Embrace, To show shyness, To show one's body, To deciplinne children Utsanga hasta is used.",
+    "detection_rules": {
+      "left_hand": "Mrugasheersha Hasta",
+      "right_hand": "Mrugasheersha Hasta",
+      "connection": "Arms crossed across the chest, right hand on left shoulder, left hand on right shoulder."
+    }
+  },
+  {
+    "name": "Shivalinga Hasta",
+    "description": "Hold Ardhachandra Hasta in the left hand(palm up), keep shikhara Hasta in right hand & place it on the left hand to show Shivalinga Hasta.",
+    "viniyoga_translation": "This Hasta is used to show Shivalinga (Lord Shiva).",
+    "detection_rules": {
+      "left_hand": "Ardhachandra Hasta (palm facing up flat)",
+      "right_hand": "Shikhara Hasta",
+      "connection": "Right Shikhara is vertically resting firmly on top of the flat open left Ardhachandra."
+    }
+  },
+  {
+    "name": "Katakavardhana Hasta",
+    "description": "Hold Katakamukha Hasta in both hands, cross the hands at the wrist to show Katakavardhana Hasta.",
+    "viniyoga_translation": "To show Coronation, To worship and to show weddings this hasta is used.",
+    "detection_rules": {
+      "left_hand": "Katakamukha Hasta",
+      "right_hand": "Katakamukha Hasta",
+      "connection": "Hands crossed vertically at the wrists."
+    }
+  },
+  {
+    "name": "Kartareeswastika Hasta",
+    "description": "Hold Kartareemukha Hasta in both the hands & cross the hands at the wrist to show Kartareeswastika Hasta.",
+    "viniyoga_translation": "To show the branches of a tree, tip of Mountains, Trees This hasta is used.",
+    "detection_rules": {
+      "left_hand": "Kartareemukha Hasta",
+      "right_hand": "Kartareemukha Hasta",
+      "connection": "Hands crossed vertically at the wrists."
+    }
+  },
+  {
+    "name": "Shakata Hasta",
+    "description": "Leave the thumb & the middle fingers in Bhramara Hasta. Hold like this in both the hands & cross at the wrist to show Shakata Hasta. Another way of showing Shakata Hasta is to cross the Arala Hastas at the wrist.",
+    "viniyoga_translation": "This hasta is used to show Demons.",
+    "detection_rules": {
+      "left_hand": "Bhramara Hasta (modified)",
+      "right_hand": "Bhramara Hasta (modified)",
+      "connection": "Hands crossed at the wrist (showing bulging eyes/demon teeth)."
+    }
+  },
+  {
+    "name": "Shankha Hasta",
+    "description": "Hold the Left thumb with the last three fingers of the right hand, stretch the other fingers of the left hand, stretch & touch the thumb & index fingers of the right hand with the stretched fingers of the left hand to show Shankha Hasta.",
+    "viniyoga_translation": "This hasta is used to show Conch.",
+    "detection_rules": {
+      "left_hand": "Four fingers straight, thumb extended outward.",
+      "right_hand": "Grasping left thumb tightly with lower three fingers, thumb and index stretched upwards.",
+      "connection": "Right hand wraps around left thumb, left fingers touch the extended right thumb, forming a conch shape."
+    }
+  },
+  {
+    "name": "Chakra Hasta",
+    "description": "Hold Ardhachandra hasta in both the hands, place them one above the other like a Plus(+) mark to show Chakra Hasta.",
+    "viniyoga_translation": "This Hasta is used to show Chakra, the weapon of Lord Vishnu.",
+    "detection_rules": {
+      "left_hand": "Ardhachandra Hasta",
+      "right_hand": "Ardhachandra Hasta",
+      "connection": "Palms placed one vertically above the other horizontally perpendicularly to form a Plus (+) or wheel shape."
+    }
+  },
+  {
+    "name": "Samputa Hasta",
+    "description": "Hold Chakra Hasta, fold the thumb & little fingers in both the hands to show Samputa Hasta.",
+    "viniyoga_translation": "To cover things and to show the sacred box in which the idols are placed this Samputa Hasta is used.",
+    "detection_rules": {
+      "left_hand": "Ardhachandra (thumb and pinky folded in)",
+      "right_hand": "Ardhachandra (thumb and pinky folded in)",
+      "connection": "Placed one above the other perpendicularly forming a closed box."
+    }
+  },
+  {
+    "name": "Paasha Hasta",
+    "description": "Hold Suchi Hasta in both hands, bend the index finger a little & join these fingers like a chain to show Paasha Hasta.",
+    "viniyoga_translation": "To show Playful Quarrel, Rope, Chains this hasta is used.",
+    "detection_rules": {
+      "left_hand": "Suchi Hasta (index slightly bent)",
+      "right_hand": "Suchi Hasta (index slightly bent)",
+      "connection": "The two bent index fingers interlock with each other creating a chain or hook."
+    }
+  },
+  {
+    "name": "Keelaka Hasta",
+    "description": "Hold Mrugasheersha Hasta in both hands, bend the little finger a little & join these fingers like a chain to show Keelaka Hasta.",
+    "viniyoga_translation": "To show friendly talk this hasta is used.",
+    "detection_rules": {
+      "left_hand": "Mrugasheersha Hasta (pinky slightly bent)",
+      "right_hand": "Mrugasheersha Hasta (pinky slightly bent)",
+      "connection": "The two extended pinky fingers interlock with each other creating a chain."
+    }
+  },
+  {
+    "name": "Matsya Hasta",
+    "description": "Hold Pataka hasta in both the hands, place them one above the other, stretch the thumb a bit (like fins of fish) to show Matsya Hasta.",
+    "viniyoga_translation": "This hasta is used to show Fish.",
+    "detection_rules": {
+      "left_hand": "Pataka Hasta (facing down)",
+      "right_hand": "Pataka Hasta (facing down resting on top of left)",
+      "connection": "Right palm rests onto the back of the left hand, both thumbs extend outward to act as fins."
+    }
+  },
+  {
+    "name": "Koorma Hasta",
+    "description": "Opposite of Chakra Hasta is Koorma Hasta i.e Stretch the thumb & little fingers & fold the other fingers in Chakra Hasta to show Koorma Hasta.",
+    "viniyoga_translation": "This Hasta is used to show Turtle, Tortoise",
+    "detection_rules": {
+      "left_hand": "Index, middle, ring fingers folded in; thumb and pinky stretched out.",
+      "right_hand": "Index, middle, ring fingers folded in; thumb and pinky stretched out.",
+      "connection": "Palms stacked vertically over each other, the 4 extended thumbs/pinkies act as the tortoise legs."
+    }
+  },
+  {
+    "name": "Varaha Hasta",
+    "description": "Hold Mrugasheersha hasta in both hands, place them one above the other to show Varaha Hasta.",
+    "viniyoga_translation": "This Hasta is used to Show Boar (Wild Pig)",
+    "detection_rules": {
+      "left_hand": "Mrugasheersha Hasta",
+      "right_hand": "Mrugasheersha Hasta",
+      "connection": "Right palm rests on back of the left hand as they point identically."
+    }
+  },
+  {
+    "name": "Garuda Hasta",
+    "description": "Hold Ardhachandra in both the hands, turn them & hold them with the thumbs to show Garuda Hasta.",
+    "viniyoga_translation": "This Hasta is used to show a bird called Garuda.",
+    "detection_rules": {
+      "left_hand": "Ardhachandra Hasta",
+      "right_hand": "Ardhachandra Hasta",
+      "connection": "Palms turned toward body, thumbs firmly interlocked, acting as wings spanning outward."
+    }
+  },
+  {
+    "name": "Nagabandha Hasta",
+    "description": "Hold Sarpasheersha in both the hands & cross them at the wrist to show Nagabandha Hasta.",
+    "viniyoga_translation": "To show Snakes, Creeper Chamber, Atharvana Veda Shlokas this hasta is used.",
+    "detection_rules": {
+      "left_hand": "Sarpasheersha Hasta",
+      "right_hand": "Sarpasheersha Hasta",
+      "connection": "Crossed solidly at the wrists, pointing to snake hoods twisting together."
+    }
+  },
+  {
+    "name": "Khatva Hasta",
+    "description": "Hold Chatura Hasta in both hands, place the hands one above the other, stretch the index fingers down to show Khatva Hasta.",
+    "viniyoga_translation": "This Hasta is used to show Bed.",
+    "detection_rules": {
+      "left_hand": "Chatura Hasta (index finger extended straight downwards)",
+      "right_hand": "Chatura Hasta (index finger extended straight downwards)",
+      "connection": "Hands placed horizontally side by side over each other, the downward index fingers forming the legs of the cot/bed."
+    }
+  },
+  {
+    "name": "Bherundha Hasta",
+    "description": "Hold Kapitha Hasta & cross them at the wrist to show Bherundha Hasta.",
+    "viniyoga_translation": "To show a bird couple called Bherundha this hasta is used.",
+    "detection_rules": {
+      "left_hand": "Kapitha Hasta",
+      "right_hand": "Kapitha Hasta",
+      "connection": "Crossed closely at the wrists pointing upwards."
+    }
+  },
+  {
+    "name": "Avahittha Hasta",
+    "description": "Hold Alapadma in both the hands, cross them at the wrist, place them near chest to show Avahitha Hasta.",
+    "viniyoga_translation": "To show Love, Catching the ball, Breasts Avahittha Hasta is used.",
+    "detection_rules": {
+      "left_hand": "Alapadma Hasta",
+      "right_hand": "Alapadma Hasta",
+      "connection": "Crossed at the wrists slightly separated holding near the chest area pointing towards the shoulders."
+    }
+  }
+]

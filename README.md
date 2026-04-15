@@ -33,6 +33,12 @@ pip install -r requirements.txt
 ```bash
 # Pose Detection Demo
 python demos/pose_detection_demo.py
+
+# Hand Gesture Detection (Bharathanatyam Hastas)
+python demos/hand_gesture_demo.py
+
+# Or use the convenient wrapper script
+python run_webcam.py
 ```
 
 ## Project Structure

@@ -1,0 +1,346 @@
+[
+  {
+    "name": "Pataka Hasta",
+    "description": "Stretch all the fingers & hold them tightly together to show Pataka Hasta.",
+    "viniyoga_translation": "to begin the dance, clouds, forest, to refuse something, to show brests, night sky, river, the heavens, horse, strike down, wind, sleeping, to go quietly, to indicate greatness, to offer something, moonlight, bright sunlight, to open a door, seven scriptures, waves, to enter a street, to show equality, to anoint ones body, to show oneself, to take an oath, to show silence, to bless, ideal king, palm leaf, shield, to touch things, to indicate such and such person, ocean, to indicate everything is alright, to address a person, going forward, sword, month, year, rainy season, to sweep, these are the different usages of Pataka Hasta",
+    "detection_rules": {
+      "thumb": "straight",
+      "index": "straight",
+      "middle": "straight",
+      "ring": "straight",
+      "pinky": "straight"
+    }
+  },
+  {
+    "name": "Tripataka Hasta",
+    "description": "Bend the fourth finger & hold the rest tightly, like in pataka hasta to show Tripataka Hasta.",
+    "viniyoga_translation": "Crown, Tree, Weapon of Lord Indra, Lord Indra, Ketakee Flower, Lamp, to show flames, Cheeks, Letter writing, Arrow, Changing, Getting together of Man & Woman Tripataka is used.",
+    "detection_rules": {
+      "thumb": "straight",
+      "index": "straight",
+      "middle": "straight",
+      "ring": "bent",
+      "pinky": "straight"
+    }
+  },
+  {
+    "name": "Ardhapataka Hasta",
+    "description": "Bend the fourth & the last finger and hold the rest tightly like in Tripataka Hasta to show Ardhapataka Hasta.",
+    "viniyoga_translation": "Sprouts, Board, Banks of rivers, to show two persons, Hack Saw, Sword, Flag, Shrine, Horns, Ardhapataka is used to show all these things.",
+    "detection_rules": {
+      "thumb": "straight",
+      "index": "straight",
+      "middle": "straight",
+      "ring": "bent",
+      "pinky": "bent"
+    }
+  },
+  {
+    "name": "Kartareemukha Hasta",
+    "description": "Hold Ardhapataka Hasta. Then make an angle between the second & third fingers (like in scissors) to show Kartareemukha Hasta.",
+    "viniyoga_translation": "Seperation of Man & Woman, differentiation, Stealing, Glance, Death, Showing Difference, Lightning, Single Bed, Pain of Seperation, Falling Down, Creeper, Kartareemukha is used for all these things.",
+    "detection_rules": {
+      "thumb": "touching_ring_and_pinky",
+      "index": "straight",
+      "middle": "straight",
+      "ring": "touching_thumb",
+      "pinky": "touching_thumb",
+      "special": "index and middle are spread apart (V-shape)"
+    }
+  },
+  {
+    "name": "Mayura Hasta",
+    "description": "Hold Tripataka Hasta but touch the fourth finger with the thumb to show Mayura Hasta.",
+    "viniyoga_translation": "Peacock, Creeper, Bird, Vomitting, Curls, Forehead, Dot on the Forehead(bindi), Tears, Predictions, Famous, To show all these meanings Mayura Hasta is used.",
+    "detection_rules": {
+      "thumb": "touching_ring",
+      "index": "straight",
+      "middle": "straight",
+      "ring": "touching_thumb",
+      "pinky": "straight"
+    }
+  },
+  {
+    "name": "Ardhachandra Hasta",
+    "description": "Leave the thumb in the Pataka Hasta to show Ardhachandra Hasta.",
+    "viniyoga_translation": "Moon, Krishna's Birthday, pushing out holding the neck, Weapon, worshipping the gods, Plate, Creation, Waist, Worrying, Saying that 'It is mine', Meditation, Praying, Touching the Limbs, To salute the common man Ardhachandra Hasta is used.",
+    "detection_rules": {
+      "thumb": "stretched_out",
+      "index": "straight",
+      "middle": "straight",
+      "ring": "straight",
+      "pinky": "straight",
+      "special": "fingers grouped together, making a C curve with thumb"
+    }
+  },
+  {
+    "name": "Arala Hasta",
+    "description": "Fold the second finger in Pataka Hasta to show Arala Hasta.",
+    "viniyoga_translation": "Drinking Poison or Nectar, Thunder storm, Arala Hasta is used to show all these things.",
+    "detection_rules": {
+      "thumb": "straight",
+      "index": "bent",
+      "middle": "straight",
+      "ring": "straight",
+      "pinky": "straight"
+    }
+  },
+  {
+    "name": "Shukatunda Hasta",
+    "description": "Bend the fourth finger in Arala Hasta to show Shukatunda Hasta.",
+    "viniyoga_translation": "To Shoot an Arrow, Weapon, Saying Cunning things, Showing Fury, Shukatunda Hasta is used for all these things.",
+    "detection_rules": {
+      "thumb": "straight",
+      "index": "bent",
+      "middle": "straight",
+      "ring": "bent",
+      "pinky": "straight"
+    }
+  },
+  {
+    "name": "Mushti Hasta",
+    "description": "Fold all the fingers in to the palm & keep the thumb on them to show Mushti Hasta(like a fist).",
+    "viniyoga_translation": "Strength, Dragging by the Hair, Courageous, Holding Things, Wrestling, To show all these Mushti Hasta is used.",
+    "detection_rules": {
+      "thumb": "folded_over_fingers",
+      "index": "folded",
+      "middle": "folded",
+      "ring": "folded",
+      "pinky": "folded"
+    }
+  },
+  {
+    "name": "Shikhara Hasta",
+    "description": "Stretch the thumb finger in Mushti Hasta to show Shikhara Hasta.",
+    "viniyoga_translation": "Cupid, Bow, Piller, Silence, Offerings to the dead ancestors, Lips, Enterung, Teeth, Questioning, Limbs, saying 'NO', Recollection, At he end of an expression, Tieing around the waist, Hugging, Weapon names Shakti, Weapon called Tomara, Ringing the Bell, Churning, Shikhara Hasta is used to show all these things.",
+    "detection_rules": {
+      "thumb": "straight",
+      "index": "folded",
+      "middle": "folded",
+      "ring": "folded",
+      "pinky": "folded"
+    }
+  },
+  {
+    "name": "Kapitha Hasta",
+    "description": "Fold the second finger on the thumb in the Shikhara Hasta to show Kapitha Hasta.",
+    "viniyoga_translation": "To show Godess Lakshmi, Saraswati, Going Around, Holding the symbols(Tala), Milking the cows, Putting eye liners, Holding Flowers, Holding the Saree(pallu), Draping a cloth on the face, To Hold Lamp and Incense, Kapitha Hasta is Used.",
+    "detection_rules": {
+      "thumb": "straight",
+      "index": "touching_thumb",
+      "middle": "folded",
+      "ring": "folded",
+      "pinky": "folded"
+    }
+  },
+  {
+    "name": "Katakamukha Hasta",
+    "description": "Bring together the thumb, index & middle fingers & stretch the other two fingers at an angle to show Katakamukha Hasta.",
+    "viniyoga_translation": "Plucking the flowers, Pearl necklace, Wearing Flowers, Getting attracted by the cupid arrows, Giving Beetle Leaf, Showing Kastoori & other Perfumes, Enjoying the perfumes, To show Talking & Seeing Katakamukha Hasta is used.",
+    "detection_rules": {
+      "thumb": "touching_index_and_middle",
+      "index": "touching_thumb",
+      "middle": "touching_thumb",
+      "ring": "straight",
+      "pinky": "straight"
+    }
+  },
+  {
+    "name": "Suchi Hasta",
+    "description": "Stretch the index finger & bring together all others to show Suchi Hasta.",
+    "viniyoga_translation": "Showing Number One, Showing Para Brahma, To show 100, Sun, City, Univerce, Saying 'That's how it is', Asking 'when, why, who, how?', Scaring, Thin or Skinny, Wonder, Showing the hair, Umbrella, Capable, Room, Exitement, Beating an instrument called Bheri, Showing potter's Wheel, Wheel of a chariot, Group of People, Thinking, Evening all these are shown using Suchi Hasta.",
+    "detection_rules": {
+      "thumb": "folded",
+      "index": "straight",
+      "middle": "folded",
+      "ring": "folded",
+      "pinky": "folded"
+    }
+  },
+  {
+    "name": "Chandrakala Hasta",
+    "description": "Stretch the thumb finger in Suchi Hasta to show Chandrakala Hasta.",
+    "viniyoga_translation": "This Chandrakala Hasta is used to show Moon.",
+    "detection_rules": {
+      "thumb": "straight",
+      "index": "straight",
+      "middle": "folded",
+      "ring": "folded",
+      "pinky": "folded",
+      "special": "thumb and index form an L-shape"
+    }
+  },
+  {
+    "name": "Padmakosha Hasta",
+    "description": "Bend all the fingers towards the palm to show Padmakosha Hasta.",
+    "viniyoga_translation": "To show Fruits like Bilwa & Kapitha, Breasts, Round, Ball, Small qualtity of food, Bud, Mango, Rain of flowers, Bunch of Flowers, To show Flowers, Bell, Anthill, Lilly, Egg Padmakosha Hasta is used.",
+    "detection_rules": {
+      "thumb": "curved",
+      "index": "curved",
+      "middle": "curved",
+      "ring": "curved",
+      "pinky": "curved",
+      "special": "Hold as if grasping a round ball"
+    }
+  },
+  {
+    "name": "Sarpasheersha Hasta",
+    "description": "Bend the fingers a little in Pataka Hasta to show Sarpasheersha Hasta.",
+    "viniyoga_translation": "Sandalwood paste, Snake, Slow, Sprinkling, Caring, Holy water, Elephant's Forehead, To show the muscles of wreslers Sarpasheersha hasta is used.",
+    "detection_rules": {
+      "thumb": "slightly_bent",
+      "index": "slightly_bent",
+      "middle": "slightly_bent",
+      "ring": "slightly_bent",
+      "pinky": "slightly_bent",
+      "special": "cobra hood shape"
+    }
+  },
+  {
+    "name": "Mrugasheersha Hasta",
+    "description": "Stretch the thumb & the little fingers in Sarpasheersha Hasta to show Mrugasheersha Hasta.",
+    "viniyoga_translation": "To show Women, Cheeks, Way of doing things, To show respect, Scare, Argument, Back Stage, The place of living, Forehead, Meeting of people, Sacred Design on the floor, Massaging the feet, Getting peoplr together, house, Hoding an umbrella, Stairs, Gaite, To call the loved one, To show Movement this hasta is used.",
+    "detection_rules": {
+      "thumb": "straight",
+      "index": "bent_forward",
+      "middle": "bent_forward",
+      "ring": "bent_forward",
+      "pinky": "straight"
+    }
+  },
+  {
+    "name": "Simhamukha Hasta",
+    "description": "Touch the middle & the ring finger with thumb & stretch the second & little fingers to show Simhamukha Hasta.",
+    "viniyoga_translation": "to show Coral, Pearl, Fragrance, Curls, Hearing, Point, Salvation, Heart, Sacred fire, Rabbit, Elephant, Sacred Grass, Flower, Lion's face, Examin the medicinal preparations Simhamukha Hasta is used.",
+    "detection_rules": {
+      "thumb": "touching_middle_and_ring",
+      "index": "straight",
+      "middle": "touching_thumb",
+      "ring": "touching_thumb",
+      "pinky": "straight"
+    }
+  },
+  {
+    "name": "Langoola Hasta or Kangoola Hasta",
+    "description": "Fold the ring finger in Padmakosha Hasta to show Langoola Hasta.",
+    "viniyoga_translation": "To show Lemon, Breasts of a teenager, Flower called Kalhara, A bird called Chakora, Beetle nut, Jingles, Tablets, A bird called Chataka Kangoola Hasta is used.",
+    "detection_rules": {
+      "thumb": "curved",
+      "index": "curved",
+      "middle": "curved",
+      "ring": "folded",
+      "pinky": "curved"
+    }
+  },
+  {
+    "name": "Alapadma Hasta",
+    "description": "Stretch & hold all the fingers at an angle to each other to show Alapadma Hasta.",
+    "viniyoga_translation": "Lotus, Fruit Called Kapitha, Turning, Breasts, Pain of seperation, Mirror, Full moon, Beautiful things, Knotted Hair, Moon Chamber, Village, Height, Anger, Lake, Cart, Bird Called Chakravaka, Sound of Birds, wind, water, To Praise Alapadma Hasta is used.",
+    "detection_rules": {
+      "thumb": "straight_spread",
+      "index": "straight_spread",
+      "middle": "straight_spread",
+      "ring": "straight_spread",
+      "pinky": "straight_spread",
+      "special": "All fingers opened in a flared, twisting lotus pattern"
+    }
+  },
+  {
+    "name": "Chatura Hasta",
+    "description": "Stretch all the fingers, hold the little finger at an angle to the other fingers & fold the thumb & touch the bottom of the ring finger to show Chatura Hasta.",
+    "viniyoga_translation": "Fragrane called Kastoori, To show small quantity, Gold and other metals, Wetness, Sadness, Taste, Eye, Differentiate colors, Promise, Romance, Slow movement, Breaking, Seat, Melted Butter, Oil Chatura Hasta is used.",
+    "detection_rules": {
+      "thumb": "touching_base_of_ring",
+      "index": "straight",
+      "middle": "straight",
+      "ring": "straight",
+      "pinky": "straight_angled_out"
+    }
+  },
+  {
+    "name": "Bhramara Hasta",
+    "description": "Touch the Middle finger with thumb, bend the second finger completely, stretch the last two fingers at an angle to show Bhramara Hasta.",
+    "viniyoga_translation": "To show Honey Bee, Parrot, Meditation(Yoga), Birds Called Sarasa & Kokila Bhramara Hasta is used.",
+    "detection_rules": {
+      "thumb": "touching_middle",
+      "index": "folded",
+      "middle": "touching_thumb",
+      "ring": "straight",
+      "pinky": "straight"
+    }
+  },
+  {
+    "name": "Hamsasya Hasta",
+    "description": "Touch the index finger with thumb & hold the other fingers at an angle to show Hamsasya Hasta.",
+    "viniyoga_translation": "Tying the sacred thread of marriage, Advice, Decission, Excitement, Pearls & other precious stones, Drawing, Fly, Drop of water, Wick of the lamp, Polishing, Searching, Jasmine & other flowers, Drawing a line, Holding garland, To say 'i am Brahma', Saying 'No', Looking at the polished article, Hamsasya Hasta is used to show all these things.",
+    "detection_rules": {
+      "thumb": "touching_index",
+      "index": "touching_thumb",
+      "middle": "straight_spread",
+      "ring": "straight_spread",
+      "pinky": "straight_spread"
+    }
+  },
+  {
+    "name": "Hamsapaksha Hasta",
+    "description": "Stretch the Little finger in Sarpasheersha Hasta to show Hamsapaksha Hasta.",
+    "viniyoga_translation": "To show number 6, Bridge, Impression of the nails, Way of doing thing Hamsapaksha Hasta is used.",
+    "detection_rules": {
+      "thumb": "straight",
+      "index": "straight",
+      "middle": "straight",
+      "ring": "straight",
+      "pinky": "straight_spread",
+      "special": "like Pataka but thumb is also placed flat and pinky is separated"
+    }
+  },
+  {
+    "name": "Samdamsha Hasta",
+    "description": "Hold the Padmakosha Hasta, close & open the fingers often to show Samdamsha Hasta.",
+    "viniyoga_translation": "To show Generosity, Sacrificial Offering, Wound, Insects, Fear, Offering Worship, Number 5 Samdamsha Hasta is used.",
+    "detection_rules": {
+      "thumb": "touching_all_fingertips",
+      "index": "touching_thumb",
+      "middle": "touching_thumb",
+      "ring": "touching_thumb",
+      "pinky": "touching_thumb",
+      "special": "Dynamic movement: repeatedly opening to Padmakosha and closing."
+    }
+  },
+  {
+    "name": "Mukula Hasta",
+    "description": "Touch the tips of all the fingers to show Mukula Hasta.",
+    "viniyoga_translation": "To shoa Lilly, Eating, Cupid, Smearing sacred marks on the body, Belly button, Banana Flower Mukula Hasta is used.",
+    "detection_rules": {
+      "thumb": "touching_all_fingertips",
+      "index": "touching_thumb",
+      "middle": "touching_thumb",
+      "ring": "touching_thumb",
+      "pinky": "touching_thumb"
+    }
+  },
+  {
+    "name": "Tamrachooda Hasta",
+    "description": "Hold the Mukula Hasta, seperate the index finger, bend a little to show Tamrachooda Hasta.",
+    "viniyoga_translation": "To show Rooster,A bird called Baka, Crow, Camel, Calf and to show letters, Taamrachooda Hasta is used.",
+    "detection_rules": {
+      "thumb": "touching_middle_ring_pinky",
+      "index": "bent_forward_separated",
+      "middle": "touching_thumb",
+      "ring": "touching_thumb",
+      "pinky": "touching_thumb"
+    }
+  },
+  {
+    "name": "Trishoola Hasta",
+    "description": "Fold the thumb & the little finger, stretch the other fingers & hold them together to show Trishoola Hasta.",
+    "viniyoga_translation": "To show a leaf called Bilwa & to show the number 3 Trishoola Hasta is used.",
+    "detection_rules": {
+      "thumb": "touching_pinky",
+      "index": "straight",
+      "middle": "straight",
+      "ring": "straight",
+      "pinky": "touching_thumb"
+    }
+  }
+]
